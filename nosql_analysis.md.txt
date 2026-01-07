@@ -1,0 +1,29 @@
+SECTION A
+
+the current relational database would struggle with the outlined issues because:
+
+Products having different attributes: The current relational database uses a fixed schema. All products must follow the same table structure, which is inefficient when different products have different attributes. For example, laptops require fields like RAM and processor, while shoes need size and color, leading to many unused or NULL columns.
+
+Frequent schema changes: Adding new product types requires altering table structures, which can be time-consuming and may affect existing applications and queries.
+
+Storing customer reviews: In relational databases reviews must be stored in separate tables and retrieved using joins, making queries complex and slower.
+
+MongoDB handles these issues better by allowing flexible document structures, easy schema evolution, and nested data storage, making it more suitable for diverse product catalogs.
+
+
+SECTION B
+
+MongoDB solves these problems by using a flexible schema which allows each product to have its own document structure without changing the database design.
+
+MongoDB supports embedded documents allowing customer reviews to be stored directly inside the product document. 
+
+MongoDB supports horizontal scalability through sharding. Data can be distributed across multiple servers allowing the system to handle large and growing product catalogs efficiently without performance drop.
+
+
+SECTION C
+
+1. Data consistency is harder to maintain:
+In MongoDB, related data is usually duplicated or nested. If the same information needs to be updated in multiple documents, it can lead to inconsistency in data. MySQL is better in using normalized tables and foreign keys.
+
+2. Complex reporting and analytics are more difficult:
+MongoDB is not ideal for complex analytical queries involving joins, aggregations across many collections, or reporting over long periods. MySQL is better for structured reporting and SQL-based analytics.
