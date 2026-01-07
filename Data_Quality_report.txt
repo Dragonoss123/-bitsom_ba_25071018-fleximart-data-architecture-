@@ -1,0 +1,22 @@
+ETL PROCESSING REPORT
+--------------------------------------------------
+
+Customers File:
+Records Read: 26
+Duplicates Removed: 1
+Missing Values Handled: 5
+Records Loaded: 25
+
+Products File:
+Records Read: 20
+Duplicates Removed: 0
+Missing Values Handled: 4
+Records Loaded: 20
+
+Sales File:
+Records Read: 41
+Duplicates Removed: 1
+Missing Values Handled: 5
+Records Loaded: 35
+
+ETL process completed successfully.
